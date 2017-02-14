@@ -26,12 +26,12 @@
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane active" id="signin">
-									<form style="padding-top: 5px">
+									<form style="padding-top: 5px" action="welcomeback.php" method="post">
 										<div class="form-group">
-											<input type="text" class="form-control" id="userName" placeholder="User Name">
+											<input type="text" class="form-control" id="userName" name="userName" placeholder="User Name">
 										</div>
 										<div class="form-group">
-											<input type="password" class="form-control" id="password" placeholder="Password">
+											<input type="password" class="form-control" id="password" name="password" placeholder="Password">
 										</div>
 										<button type="button" class="btn btn-success btn-block" id="doLogon">Sign In</button>
 									</form>
@@ -107,13 +107,13 @@
 			<div class="page-header"><h1><span class="glyphicon glyphicon-lock"></span>&nbsp;Please present your credentials to enjoy our service</h1></div>
 
 			<div class="well well-sm">
-				<form class="form-horizontal">
+				<form class="form-horizontal" action="welcomeback.php" method="post">
 					<div class="form-group">
 						<label for="yourName" class="col-sm-3 control-label">Username</label>
 						<div class="col-sm-9">
 							<div class="input-group">
 								<span class="input-group-addon glyphicon glyphicon-user"></span>
-								<input type="text" class="form-control" id="yourName" placeholder="Your Username">
+								<input type="text" class="form-control" id="userName" name="userName" placeholder="Your Username">
 							</div>
 						</div>
 					</div>
@@ -122,69 +122,19 @@
 						<div class="col-sm-9">
 							<div class="input-group">
 								<span class="input-group-addon glyphicon glyphicon-asterisk"></span>
-								<input type="email" class="form-control" id="yourPassword" placeholder="Your Password">
+								<input type="email" class="form-control" id="password" name="password" placeholder="Your Password">
 							</div>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="yourComments" class="col-sm-3 control-label">Tell us</label>
-						<div class="col-sm-9">
-							<div class="btn-toolbar" data-role="editor-toolbar" data-target="#yourComments">
-								<div class="btn-group">
-									<a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="icon-font"></i><b class="caret"></b></a>
-									<ul class="dropdown-menu"></ul>
-								</div>
-								<div class="btn-group">
-									<a class="btn dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="icon-text-height"></i>&nbsp;<b class="caret"></b></a>
-									<ul class="dropdown-menu">
-										<li><a data-edit="fontSize 5"><font size="5">Huge</font></a></li>
-										<li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
-										<li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
-									</ul>
-								</div>
-								<div class="btn-group">
-									<a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="icon-bold"></i></a>
-									<a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="icon-italic"></i></a>
-									<a class="btn" data-edit="strikethrough" title="Strikethrough"><i class="icon-strikethrough"></i></a>
-									<a class="btn" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="icon-underline"></i></a>
-								</div>
-								<div class="btn-group hidden-xs hidden-sm">
-									<a class="btn" data-edit="insertunorderedlist" title="Bullet list"><i class="icon-list-ul"></i></a>
-									<a class="btn" data-edit="insertorderedlist" title="Number list"><i class="icon-list-ol"></i></a>
-									<a class="btn" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="icon-indent-left"></i></a>
-									<a class="btn" data-edit="indent" title="Indent (Tab)"><i class="icon-indent-right"></i></a>
-								</div>
-								<div class="btn-group hidden-xs hidden-sm">
-									<a class="btn" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="icon-align-left"></i></a>
-									<a class="btn" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="icon-align-center"></i></a>
-									<a class="btn" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="icon-align-right"></i></a>
-									<a class="btn" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="icon-align-justify"></i></a>
-								</div>
-								<div class="btn-group hidden-xs hidden-sm">
-									<a class="btn dropdown-toggle" data-toggle="dropdown" title="Hyperlink"><i class="icon-link"></i></a>
-									<div class="dropdown-menu input-append">
-										<input class="span2" placeholder="URL" type="text" data-edit="createLink"/>
-										<button class="btn" type="button">Add</button>
-									</div>
-									<a class="btn" data-edit="unlink" title="Remove Hyperlink"><i class="icon-cut"></i></a>
-								</div>
-								<div class="btn-group hidden-xs hidden-sm">
-									<a class="btn" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="icon-undo"></i></a>
-									<a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="icon-repeat"></i></a>
-								</div>
-							</div>		
-							<div id="yourComments">please tell us what you think about us.</div>								
 						</div>
 					</div>
 					<div class="col-sm-9 col-sm-offset-3">
 						<div class="checkbox">
-							<label><input type="checkbox">Subscribe Me !!!</label>
+							<label><input type="checkbox">Remember me (do not check this unless this is your own computer)</label>
 						</div>
 					</div>
 					<div class="clearfix">&nbsp;</div>
 					<div class="form-group">
 						<div class="col-sm-12 text-center">
-							<button type="submit" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Post It</button>
+							<button type="submit" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-check"></span>&nbsp;Sign In</button>
 						</div>
 					</div>
 				</form>

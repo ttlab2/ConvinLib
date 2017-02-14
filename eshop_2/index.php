@@ -36,12 +36,12 @@
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane active" id="signin">
-									<form style="padding-top: 5px">
+									<form style="padding-top: 5px" action="welcomeback.php" method="post">
 										<div class="form-group">
-											<input type="text" class="form-control" id="userName" placeholder="User Name">
+											<input type="text" class="form-control" id="userName" name="userName" placeholder="User Name">
 										</div>
 										<div class="form-group">
-											<input type="password" class="form-control" id="password" placeholder="Password">
+											<input type="password" class="form-control" id="password" name="password" placeholder="Password">
 										</div>
 										<button type="button" class="btn btn-success btn-block" id="doLogon">Sign In</button>
 									</form>
