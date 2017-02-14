@@ -85,17 +85,17 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand brand" href="/index.html">(School Name) Library Service</a>
+						<a class="navbar-brand brand" href="/index.php">(School Name) Library Service</a>
 					</div>
 
 					<div class="collapse navbar-collapse" id="the-menu">
 						<ul class="nav navbar-nav">
 						<!--Icons provided by Glyphicons (included in Bootstrap).-->
-							<li class="active"><a href="/index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
-							<li><a href="/about.html"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;About</a></li>
-							<li><a href="/browse.html"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Books List</a></li>
-							<li><a href="/search.html"><span class="glyphicon glyphicon-search"></span>&nbsp;Book Search</a></li>
-							<li><a href="/contact.html"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
+							<li class="active"><a href="/index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+							<li><a href="/about.php"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;About</a></li>
+							<li><a href="/browse.php"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Books List</a></li>
+							<li><a href="/search.php"><span class="glyphicon glyphicon-search"></span>&nbsp;Book Search</a></li>
+							<li><a href="/contact.php"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="dropdown">
@@ -216,20 +216,20 @@
 								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 								</button>
-								<strong>Attendtion Please:</strong><br />Please <!--<a href="/contact.html" class="alert-link">let us know</a>--><!--return or renew the books you borrowed on time to avoid the unnecessary penalty payment.
+								<strong>Attendtion Please:</strong><br />Please <!--<a href="/contact.php" class="alert-link">let us know</a>--><!--return or renew the books you borrowed on time to avoid the unnecessary penalty payment.
 							</div>-->
 							<!--<div class="alert alert-danger">
 								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 								</button>
-								<strong>Warning:</strong><br />You <!--<a href="/contact.html" class="alert-link">let us know</a>--><!--now have at least one book already expired. Please return to the library immediately.
+								<strong>Warning:</strong><br />You <!--<a href="/contact.php" class="alert-link">let us know</a>--><!--now have at least one book already expired. Please return to the library immediately.
 							</div>-->
 							<!--Friendly Reminder supposed to be more random. As not only one reminder in the system.-->
 							<div class="alert alert-success">
 								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 								</button>
-								<strong>Friendly Reminder:</strong><br />You <!--<a href="/contact.html" class="alert-link">let us know</a>-->can now pre-order books when you got interested.
+								<strong>Friendly Reminder:</strong><br />You <!--<a href="/contact.php" class="alert-link">let us know</a>-->can now pre-order books when you got interested.
 							</div>
 							<!--<ul class="list-inline">
 								<li><img src="img/p1.png" class="img-thumbnail" alt="Product 1" title="Product 1"></li>
