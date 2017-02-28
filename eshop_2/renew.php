@@ -115,7 +115,7 @@
 				</div>
 			</nav>
 
-			<div class="page-header"><h1><span class="glyphicon glyphicon-log-out"></span>&nbsp;Borrow books and medias</h1></div>
+			<div class="page-header"><h1><span class="glyphicon glyphicon-time"></span>&nbsp;Extend books and medias lending periods</h1></div>
 			
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
