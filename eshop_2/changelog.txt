@@ -6,3 +6,6 @@
 -Borrow page modified
 -Renew page added (and modified from the finished borrow page)
 -Default user icon added for both borrow page and renew page
+
+7/3/2017 (Sam Wong)
+-Return page added (and modified from the finished borrow page, however the report generate function will be added)
