@@ -9,3 +9,6 @@
 
 7/3/2017 (Sam Wong)
 -Return page added (and modified from the finished borrow page, however the report generate function will be added)
+
+14/3/2017 (Sam Wong)
+-Advanced search page added (modifications not yet completed)
