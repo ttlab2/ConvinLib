@@ -103,8 +103,8 @@
 							<li><a href="/index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
 							<li><a href="/about.php"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;About</a></li>
 							<li><a href="/browse.php"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Books List</a></li>
-							<li><a href="/search.php"><span class="glyphicon glyphicon-search"></span>&nbsp;Book Search</a></li>
-							<li class="active"><a href="/contact.php"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
+							<li class="active"><a href="/search.php"><span class="glyphicon glyphicon-search"></span>&nbsp;Book Search</a></li>
+							<li><a href="/contact.php"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="dropdown">
@@ -161,6 +161,27 @@
 								<span class="input-group-addon glyphicon glyphicon-briefcase"></span>
 								<input type="text" class="form-control" id="publisher" placeholder="Which company publish this book">
 							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="lendingtype" class="col-sm-3 control-label">Material type</label>
+						<div class="col-sm-9">
+							<div class="radio">
+								<label class="radio-inline"><input type="radio" name="optlendingtype">Lending</label>
+								<label class="radio-inline"><input type="radio" name="optlendingtype">Reference</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="classification" class="col-sm-3 control-label">Material classifications (more than one classifications can be selected):</label>
+						<div class="col-sm-9">
+							<select multiple class="form-control" id="optclassification">
+								<option value="">1</option>
+								<option value="">2</option>
+								<option value="">3</option>
+								<option value="">4</option>
+								<option value="">5</option>
+							</select>
 						</div>
 					</div>
 					<div class="form-group">

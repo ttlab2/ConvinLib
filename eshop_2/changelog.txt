@@ -1,3 +1,19 @@
+--Records from the initial stage--
+31/10/2016 (Sam Wong)
+-Project started
+-Prototype pages modifications begin
+
+7/2/2017 (Sam Wong)
+-Library system startup (from the teammate's portable hard drive)
+-Archive original files to single folder
+-Upload the missing "welcomeback.php" during the conversion
+
+14/2/2017 (Sam Wong)
+-Format conversions from HTML to PHP completed
+-Archive original files to single folder
+-Upload the missing "welcomeback.php" during the conversion
+
+--Records logged during expansion--
 21/2/2017 (Sam Wong)
 -Borrow page added from index page (to be modified)
 -Changelog file added
@@ -12,3 +28,7 @@
 
 14/3/2017 (Sam Wong)
 -Advanced search page added (modifications not yet completed)
+
+21/3/2017 (Sam Wong)
+-Advanced search page modifications almost completed, to classify for lending or reference materials
+-Changelog records from GitHub added in this document
