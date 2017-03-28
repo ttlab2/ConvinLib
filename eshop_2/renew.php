@@ -127,7 +127,7 @@
 									<form class="form-inline">
 										<div class="form-group">
 											<label for="User_id">Reader's ID: </label>
-											<input type="email" class="form-control" id="uid" placeholder="Enter Reader's ID">
+											<input type="email" class="form-control" name="uid" id="uid" value"" placeholder="Enter Reader's ID">
 											<input type="submit" class="btn btn-primary"></button>
 										</div>
 									</form>
@@ -162,7 +162,7 @@
 									<form class="form-inline">
 										<div class="form-group">
 											<label for="Book_id">Books or medias' ID: </label>
-											<input type="email" class="form-control" id="bookid" placeholder="Enter books or medias' ID">
+											<input type="email" class="form-control" name="bookid" id="bookid" value"" placeholder="Enter books or medias' ID">
 											<input type="submit" class="btn btn-primary"></button>
 										</div>
 									</form>

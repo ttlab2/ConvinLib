@@ -113,7 +113,7 @@
 						<div class="col-sm-9">
 							<div class="input-group">
 								<span class="input-group-addon glyphicon glyphicon-user"></span>
-								<input type="text" class="form-control" id="userName" name="userName" placeholder="Your Username">
+								<input type="text" class="form-control" id="userName" name="userName" value"" placeholder="Your Username">
 							</div>
 						</div>
 					</div>
@@ -122,7 +122,7 @@
 						<div class="col-sm-9">
 							<div class="input-group">
 								<span class="input-group-addon glyphicon glyphicon-asterisk"></span>
-								<input type="email" class="form-control" id="password" name="password" placeholder="Your Password">
+								<input type="password" class="form-control" id="password" name="password" value"" placeholder="Your Password">
 							</div>
 						</div>
 					</div>

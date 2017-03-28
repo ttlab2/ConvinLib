@@ -37,3 +37,4 @@
 -Advanced search page completed
 --Simplified version of "Library of Congress Classification Scheme" implemented
 --Basic Form functions tested
+-Borrow, renew, return and signin page modified for the bug fix
