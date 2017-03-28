@@ -32,3 +32,8 @@
 21/3/2017 (Sam Wong)
 -Advanced search page modifications almost completed, to classify for lending or reference materials
 -Changelog records from GitHub added in this document
+
+28/3/2017 (Sam Wong)
+-Advanced search page completed
+--Simplified version of "Library of Congress Classification Scheme" implemented
+--Basic Form functions tested
