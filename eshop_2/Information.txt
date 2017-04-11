@@ -1,0 +1,9 @@
+The ConvinLib project is a part of the Final Year Project in AY2016-2017.
+
+Associated with Mr. Cheng (Team Leader) and Mr. Wong.
+
+
+
+--Credit for existing open source project--
+*Snig Bhaumik (Bootstrap sample webpage set provided under the "Bootstrap Essentials", 2015)
+*Lazar Laszlo (also known as LazarSoft, Javascript QRCode scanner project from GitHub, 2011-2016, licensed under the Apache License Version 2.0)

@@ -3,11 +3,32 @@
 	<head>
 		<title>(School Name) Library Service</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--BootStrap CSS-->
 		<link href="bs/css/bootstrap.min.css" rel="stylesheet">
 		<link href="bs/css/bootstrap-theme.min.css" rel="stylesheet">
 		
+		<!--BootStrap JS-->
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script type="text/javascript" src="bs/js/bootstrap.min.js"></script>
+		
+		<!--JS QR Code reader-->
+		<script type="text/javascript" src="js/jsqrcode/grid.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/version.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/detector.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/formatinf.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/errorlevel.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/bitmat.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/bmparser.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/datamask.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/rsdecoder.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/gf256poly.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/gf256.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/decoder.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/qrcode.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/findpat.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/alignpat.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/databr.js"></script>
 		
 		<style>
 			.icon-bar {
