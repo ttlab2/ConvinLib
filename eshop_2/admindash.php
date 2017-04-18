@@ -116,15 +116,57 @@
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 					<div class="panel panel-danger">
-						<div class="panel-heading" id="productHead">About us</div>
+						<div class="panel-heading" id="productHead">Fashion shop for Him</div>
 						<div class="panel-body">
-							<div class="col">
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="row">
+								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 									<dl>
-										<h3 id="contentTitle">Please choose the subcategory for specific information</h3>
+										<dt><img src="img/p1.png" class="img-responsive img-thumbnail" title="Product 1" data-toggle="popover" data-placement="right" data-content="Details of Product 1"></dt>
+										<dd>Product 1</dd>
+									</dl>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+									<dl>
+										<dt><img src="img/p3.png" class="img-responsive img-thumbnail" title="Product 3" id="prod3"></dt>
+										<dd>Product 3</dd>
+									</dl>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+									<dl>
+										<dt><img src="img/p2.png" class="img-responsive img-thumbnail" alt="Product 2" title="Product 2"></dt>
+										<dd>Product 2</dd>
 									</dl>
 								</div>
 							</div>
+							<div class="row">
+								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+									<dl>
+										<dt><img src="img/p2.png" class="img-responsive img-thumbnail" alt="Product 2" title="Product 2"></dt>
+										<dd>Product 2</dd>
+									</dl>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+									<dl>
+										<dt><img src="img/p1.png" class="img-responsive img-thumbnail" alt="Product 1" title="Product 1"></dt>
+										<dd>Product 1</dd>
+									</dl>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+									<dl>
+										<dt><img src="img/p3.png" class="img-responsive img-thumbnail" alt="Product 3" title="Product 3"></dt>
+										<dd>Product 3</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="dropdown">
+								<a class="btn btn-info btn-sm" href="#" data-toggle="dropdown" title="Open items in this shop...">See all&nbsp;<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">See next 20 items</a></li>
+									<li><a href="#">See next 100 items</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Open all items</a></li>
+								</ul>				
+							</div>  
 						</div>
 					</div>
 				</div>
@@ -204,8 +246,7 @@
 			};
 			var categories = [
 				{
-					text: "About us",
-					title: "Please choose the subcategory for specific information",
+					text: "Fashion and Clothing for Him",
 					icon: "glyphicon glyphicon-user",
 					state: {
 						expanded: true,
@@ -213,43 +254,84 @@
 					},
 					nodes: [
 					{
-						text: "Project",
-						title: "",
+						text: "Shirts",
 					},
 					{
-						text: "Acknowledgement",
-						title: "Acknowledgement"
+						text: "Tees"
 					},
 					{
-						text: "Special thanks",
-						title: "Special thanks"
+						text: "Trousers"
+					},
+					{
+						text: "Footwear"
+					},
+					{
+						text: "Accessories"
 					}
 				]
 				},
 				{
-					text: "Help page",
-					title: "Please choose the subcategory for specific information",
-					icon: "glyphicon glyphicon-question-sign",
+					text: "Fashion and Clothing for Her",
+					icon: "glyphicon glyphicon-heart",
 					state: {
 						expanded: false,
 						selected: false
 					},
 					nodes: [
 					{
-						text: "First login",
-						title: "First login",
+						text: "Shirts",
 					},
 					{
-						text: "Usage",
-						title: "How to use this system"
+						text: "Tees"
 					},
 					{
-						text: "Reminder",
-						title: "Reminder in this system"
+						text: "Skirts"
 					},
 					{
-						text: "Forgot password",
-						title: "Forgot password"
+						text: "Footwear"
+					},
+					{
+						text: "Jewellery"
+					},
+					{
+						text: "Accessories"
+					}
+				]
+				},
+				{
+					text: "Electronics",
+					icon: "glyphicon glyphicon-phone",
+					state: {
+						expanded: false,
+						selected: false
+					},
+					nodes: [
+					{
+						text: "Mobiles",
+					},
+					{
+						text: "Tablets"
+					},
+					{
+						text: "LEDs and LCDs"
+					},
+					{
+						text: "Laptops"
+					},
+					{
+						text: "Desktops"
+					},
+					{
+						text: "Cameras"
+					},
+					{
+						text: "Appliances"
+					},
+					{
+						text: "Health Care"
+					},
+					{
+						text: "Accessories"
 					}
 				]
 				}
@@ -259,7 +341,6 @@
 				data: categories,
 				onNodeSelected: function(event, data) {
 					$('#productHead').text(data.text);
-					$('#contentTitle').text(data.title);
 				}
 			});
 
