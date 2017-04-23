@@ -120,19 +120,19 @@
 							<div class="row">
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 									<dl>
-										<dt><img src="img/Book_Cover/Morse_book_cover.jpg" class="img-responsive img-thumbnail" alt="Morse" title="Morse"></dt>
+										<dt><img src="img/Book_Cover/Morse_book_cover.jpg" class="img-responsive img-thumbnail" width="80" alt="Morse" title="Morse"></dt>
 										<dd>Morse</dd>
 									</dl>
 								</div>
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 									<dl>
-										<dt><img src="img/Book_Cover/Golden_Watlle_Cookery_Book_cover,_6th_ed.jpg" class="img-responsive img-thumbnail" alt="Golden Watlle Cookery Book" title="Golden Watlle Cookery Book"></dt>
+										<dt><img src="img/Book_Cover/Golden_Watlle_Cookery_Book_cover,_6th_ed.jpg" class="img-responsive img-thumbnail" width="80" alt="Golden Watlle Cookery Book" title="Golden Watlle Cookery Book"></dt>
 										<dd>Golden Watlle Cookery Book</dd>
 									</dl>
 								</div>
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 									<dl>
-										<dt><img src="img/Book_Cover/128px-Jackie_Robinson_No5_comic_book_cover.jpg" class="img-responsive img-thumbnail" alt="Jackie Robinson" title="Jackie Robinson"></dt>
+										<dt><img src="img/Book_Cover/128px-Jackie_Robinson_No5_comic_book_cover.jpg" class="img-responsive img-thumbnail" width="80" alt="Jackie Robinson" title="Jackie Robinson"></dt>
 										<dd>Jackie Robinson</dd>
 									</dl>
 								</div>
@@ -140,19 +140,19 @@
 							<div class="row">
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 									<dl>
-										<dt><img src="img/Book_Cover/Planet_of_the_Apes_book_cover.jpg" class="img-responsive img-thumbnail" alt="Planet of the Apes" title="Planet of the Apes"></dt>
+										<dt><img src="img/Book_Cover/Planet_of_the_Apes_book_cover.jpg" class="img-responsive img-thumbnail" width="80" alt="Planet of the Apes" title="Planet of the Apes"></dt>
 										<dd>Planet of the Apes</dd>
 									</dl>
 								</div>
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 									<dl>
-										<dt><img src="img/Book_Cover/Springhaven_by_R_D_Blackmore_-_1887_book_cover.jpg" class="img-responsive img-thumbnail" alt="Springhaven" title="Springhaven"></dt>
+										<dt><img src="img/Book_Cover/Springhaven_by_R_D_Blackmore_-_1887_book_cover.jpg" class="img-responsive img-thumbnail" width="80" alt="Springhaven" title="Springhaven"></dt>
 										<dd>Springhaven</dd>
 									</dl>
 								</div>
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 									<dl>
-										<dt><img src="img/Book_Cover/The_Common_Sense_of_Socialism_-_book_cover.jpg" class="img-responsive img-thumbnail" alt="The Common Sense of Socialism" title="The Common Sense of Socialism"></dt>
+										<dt><img src="img/Book_Cover/The_Common_Sense_of_Socialism_-_book_cover.jpg" class="img-responsive img-thumbnail" width="80" alt="The Common Sense of Socialism" title="The Common Sense of Socialism"></dt>
 										<dd>The Common Sense of Socialism</dd>
 									</dl>
 								</div>

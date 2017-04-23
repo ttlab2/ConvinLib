@@ -129,7 +129,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row visible-lg-block">
+			<!--<div class="row visible-lg-block">
 				<div class="col-md-12 col-lg-12">
 					<div class="panel panel-success">
 						<div class="panel-heading">You recently visited</div>
@@ -143,7 +143,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 		</div>
 	
 		<div id="footer">

@@ -44,6 +44,6 @@
 --jsqrcode JavaScript included in the Borrow, renew and return pages, the JavaScript will be tested later on
 -Information text document added, for copyright information (to be included in the about us webpage)
 
-18/4/2017 (Sam Wong)
--About us page re-layouted (to be adjusted by javascript)
--User Preference, Administrator Dashboard pages added (from the About us page and to be modified)
+23/4/2017 (Sam Wong)
+-About us page cleanup
+-Browse Books page book covers size adjustment
