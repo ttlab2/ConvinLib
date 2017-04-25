@@ -60,3 +60,7 @@
 --Navigation bar re-ordered
 --Relevant links fixed
 -User preference page modification in progress
+
+25/4/2017 (3) (Sam Wong)
+-Minor bug fixes in current pages
+--Title link fix

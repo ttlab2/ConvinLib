@@ -78,7 +78,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand brand" href="/index.php">(School Name) Library Service</a>
+						<a class="navbar-brand brand" href="/eshop_2/index.php">(School Name) Library Service</a>
 					</div>
 
 					<div class="collapse navbar-collapse" id="the-menu">
