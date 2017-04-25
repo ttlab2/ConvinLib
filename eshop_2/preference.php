@@ -84,20 +84,22 @@
 					<div class="collapse navbar-collapse" id="the-menu">
 						<ul class="nav navbar-nav">
 						<!--Icons provided by Glyphicons (included in Bootstrap).-->
-							<li><a href="/index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
-							<li class="active"><a href="/about.php"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;About</a></li>
-							<li><a href="/browse.php"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Books List</a></li>
-							<li><a href="/search.php"><span class="glyphicon glyphicon-search"></span>&nbsp;Book Search</a></li>
-							<li><a href="/contact.php"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
+							<li><a href="/eshop_2/index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+							<li><a href="/eshop_2/about.php"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;About</a></li>
+							<li class="dropdown">
+								<a data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-book"></span>&nbsp;Books<span class="caret"></a>
+								<ul class="dropdown-menu">
+									<li><a href="/eshop_2/browse.php"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Books List</a></li>
+									<li><a href="/eshop_2/search.php"><span class="glyphicon glyphicon-search"></span>&nbsp;Book Search</a></li>
+								</ul>	
+							</li>
+							<li><a href="/eshop_2/contact.php"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="dropdown">
 								<a data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;Welcome Back<span class="caret"></span></a> 
 								<ul class="dropdown-menu">
-									<!--<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;My Cart&nbsp;<span class="badge">4</span></a></li>
-									<li class="divider"></li>-->
-									<li><a href="#"><span class="glyphicon glyphicon-picture"></span>&nbsp;My Profile</a></li>
-									<li><a href="#"><span class="glyphicon glyphicon-gift"></span>&nbsp;Lending History</a></li>
+									<li class="active"><a href="/eshop_2/preference.php"><span class="glyphicon glyphicon-picture"></span>&nbsp;Preference & Lending History</a></li>
 									<li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Notifications</a></li>
 								</ul>				
 							</li>
@@ -107,7 +109,7 @@
 				</div>
 			</nav>
 
-			<div class="page-header"><h1><span class="glyphicon glyphicon-question-sign"></span>&nbsp;About us</h1></div>
+			<div class="page-header"><h1><span class="glyphicon glyphicon-wrench"></span>&nbsp;User preference</h1></div>
 			<div id="msg"></div>
 			
 			<div class="row">
@@ -116,62 +118,29 @@
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 					<div class="panel panel-danger">
-						<div class="panel-heading" id="productHead">Fashion shop for Him</div>
+						<div class="panel-heading" id="productHead">None</div>
 						<div class="panel-body">
 							<div class="row">
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p1.png" class="img-responsive img-thumbnail" title="Product 1" data-toggle="popover" data-placement="right" data-content="Details of Product 1"></dt>
-										<dd>Product 1</dd>
-									</dl>
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p3.png" class="img-responsive img-thumbnail" title="Product 3" id="prod3"></dt>
-										<dd>Product 3</dd>
-									</dl>
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p2.png" class="img-responsive img-thumbnail" alt="Product 2" title="Product 2"></dt>
-										<dd>Product 2</dd>
-									</dl>
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									<h4 id="title">Please choose the speific category to modify the options or read the report.</h4>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p2.png" class="img-responsive img-thumbnail" alt="Product 2" title="Product 2"></dt>
-										<dd>Product 2</dd>
-									</dl>
+									
 								</div>
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p1.png" class="img-responsive img-thumbnail" alt="Product 1" title="Product 1"></dt>
-										<dd>Product 1</dd>
-									</dl>
+									
 								</div>
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p3.png" class="img-responsive img-thumbnail" alt="Product 3" title="Product 3"></dt>
-										<dd>Product 3</dd>
-									</dl>
+									
 								</div>
 							</div>
-							<div class="dropdown">
-								<a class="btn btn-info btn-sm" href="#" data-toggle="dropdown" title="Open items in this shop...">See all&nbsp;<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">See next 20 items</a></li>
-									<li><a href="#">See next 100 items</a></li>
-									<li class="divider"></li>
-									<li><a href="#">Open all items</a></li>
-								</ul>				
-							</div>  
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row visible-lg-block">
+			<!--<div class="row visible-lg-block">
 				<div class="col-md-12 col-lg-12">
 					<div class="panel panel-success">
 						<div class="panel-heading">You recently visited</div>
@@ -185,7 +154,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 		</div>
 	
 		<div id="footer">
@@ -246,7 +215,7 @@
 			};
 			var categories = [
 				{
-					text: "Fashion and Clothing for Him",
+					text: "Personal",
 					icon: "glyphicon glyphicon-user",
 					state: {
 						expanded: true,
@@ -254,84 +223,26 @@
 					},
 					nodes: [
 					{
-						text: "Shirts",
+						text: "User appearence",
 					},
 					{
-						text: "Tees"
-					},
-					{
-						text: "Trousers"
-					},
-					{
-						text: "Footwear"
-					},
-					{
-						text: "Accessories"
+						text: "Change password"
 					}
 				]
 				},
 				{
-					text: "Fashion and Clothing for Her",
-					icon: "glyphicon glyphicon-heart",
+					text: "Reports",
+					icon: "glyphicon glyphicon-tasks",
 					state: {
 						expanded: false,
 						selected: false
 					},
 					nodes: [
 					{
-						text: "Shirts",
+						text: "Book leaning records",
 					},
 					{
-						text: "Tees"
-					},
-					{
-						text: "Skirts"
-					},
-					{
-						text: "Footwear"
-					},
-					{
-						text: "Jewellery"
-					},
-					{
-						text: "Accessories"
-					}
-				]
-				},
-				{
-					text: "Electronics",
-					icon: "glyphicon glyphicon-phone",
-					state: {
-						expanded: false,
-						selected: false
-					},
-					nodes: [
-					{
-						text: "Mobiles",
-					},
-					{
-						text: "Tablets"
-					},
-					{
-						text: "LEDs and LCDs"
-					},
-					{
-						text: "Laptops"
-					},
-					{
-						text: "Desktops"
-					},
-					{
-						text: "Cameras"
-					},
-					{
-						text: "Appliances"
-					},
-					{
-						text: "Health Care"
-					},
-					{
-						text: "Accessories"
+						text: "Late return penalty records"
 					}
 				]
 				}

@@ -84,20 +84,22 @@
 					<div class="collapse navbar-collapse" id="the-menu">
 						<ul class="nav navbar-nav">
 						<!--Icons provided by Glyphicons (included in Bootstrap).-->
-							<li><a href="/index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
-							<li class="active"><a href="/about.php"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;About</a></li>
-							<li><a href="/browse.php"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Books List</a></li>
-							<li><a href="/search.php"><span class="glyphicon glyphicon-search"></span>&nbsp;Book Search</a></li>
-							<li><a href="/contact.php"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
+							<li><a href="/eshop_2/index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+							<li><a href="/eshop_2/about.php"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;About</a></li>
+							<li class="dropdown">
+								<a data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-book"></span>&nbsp;Books<span class="caret"></a>
+								<ul class="dropdown-menu">
+									<li><a href="/eshop_2/browse.php"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Books List</a></li>
+									<li><a href="/eshop_2/search.php"><span class="glyphicon glyphicon-search"></span>&nbsp;Book Search</a></li>
+								</ul>	
+							</li>
+							<li><a href="/eshop_2/contact.php"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="dropdown">
 								<a data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;Welcome Back<span class="caret"></span></a> 
 								<ul class="dropdown-menu">
-									<!--<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;My Cart&nbsp;<span class="badge">4</span></a></li>
-									<li class="divider"></li>-->
-									<li><a href="#"><span class="glyphicon glyphicon-picture"></span>&nbsp;My Profile</a></li>
-									<li><a href="#"><span class="glyphicon glyphicon-gift"></span>&nbsp;Lending History</a></li>
+									<li><a href="/eshop_2/preference.php"><span class="glyphicon glyphicon-picture"></span>&nbsp;Preference & Lending History</a></li>
 									<li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Notifications</a></li>
 								</ul>				
 							</li>
