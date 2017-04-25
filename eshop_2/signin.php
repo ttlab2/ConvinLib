@@ -22,7 +22,6 @@
 						<div>
 							<ul class="nav nav-pills">
 								<li class="active"><a href="#signin" data-toggle="tab" data-caption="Sign In">Sign In</a></li>
-								<li ><a href="#signup" data-toggle="tab" data-caption="Sign Up">Sign Up</a></li>
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane active" id="signin">
@@ -34,26 +33,6 @@
 											<input type="password" class="form-control" id="password" name="password" placeholder="Password">
 										</div>
 										<button type="button" class="btn btn-success btn-block" id="doLogon">Sign In</button>
-									</form>
-								</div>
-								<div class="tab-pane" id="signup">
-									<form style="padding-top: 5px">
-										<div class="form-group">
-											<input type="text" class="form-control" id="yourName" placeholder="Your Full Name">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" id="yourUserName" placeholder="Desired User Name">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" id="yourEmail" placeholder="Your Email Id">
-										</div>
-										<div class="form-group">
-											<input type="password" class="form-control" id="yourPwd" placeholder="Password">
-										</div>
-										<div class="form-group">
-											<input type="password" class="form-control" id="confirmPwd" placeholder="Confirm Password">
-										</div>
-										<button type="button" class="btn btn-success btn-block" id="doLogon">Sign Up</button>
 									</form>
 								</div>
 							</div>
