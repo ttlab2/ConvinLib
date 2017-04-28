@@ -73,3 +73,7 @@
 -Year of publishing fleid added in the search page
 -About up heading change
 -Preference page update
+
+28/4/2017 (2) (Sam Wong)
+-404 Page update
+-Administrator Dashboard and User Preference complete, User interface is now almost supported with "Create, Read, Update and Delete".

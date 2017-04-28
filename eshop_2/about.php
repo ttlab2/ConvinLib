@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>About us & Help page</title>
+		<title>About us & Help Page</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="bs/css/bootstrap.min.css" rel="stylesheet">
 		<link href="bs/css/bootstrap-theme.min.css" rel="stylesheet">

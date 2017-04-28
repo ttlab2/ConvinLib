@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>(School Name) Library Service</title>
+		<title>User Preference</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="bs/css/bootstrap.min.css" rel="stylesheet">
 		<link href="bs/css/bootstrap-theme.min.css" rel="stylesheet">
@@ -88,48 +88,67 @@
 				</div>
 			</nav>
 
-			<div class="page-header"><h1><span class="glyphicon glyphicon-wrench"></span>&nbsp;User preference</h1></div>
+			<div class="page-header"><h1><span class="glyphicon glyphicon-wrench"></span>&nbsp;User Preference</h1></div>
 			<div id="msg"></div>
 			
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<div id="categoryList"></div>
+			<div class="well well-sm">
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#userInfo" aria-controls="userInfo" role="tab" data-toggle="tab">User Information</a></li>
+				<li role="presentation"><a href="#modifyPassword" aria-controls="modifyPassword" role="tab" data-toggle="tab">Change Password</a></li>
+				<li role="presentation"><a href="#reports" aria-controls="reports" role="tab" data-toggle="tab">Reports</a></li>
+			</ul>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="userInfo">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="uInfo">
+						<!--For you to generate something from PHP script-->
+					</div>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-					<div class="panel panel-danger">
-						<div class="panel-heading" id="productHead">None</div>
-						<div class="panel-body">
-							<div class="row">
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-									<h4 id="title">Please choose the speific category to modify the options or read the report.</h4>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-									<form class="form-horizontal" id="form">
-									
-									</form>
+			
+				<div role="tabpanel" class="tab-pane" id="modifyPassword">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="passwd" class="col-sm-3 control-label">Current Password</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-asterisk"></span>
+									<input type="password" class="form-control" name="curPasswd" id="curPasswd" placeholder="Enter the current password you used" value="">
 								</div>
 							</div>
 						</div>
+						<div class="form-group">
+							<label for="passwd" class="col-sm-3 control-label">New Password</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-asterisk"></span>
+									<input type="password" class="form-control" name="newPasswd" id="newPasswd" placeholder="Enter the new password" value="">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="confirmPW" class="col-sm-3 control-label">Confirm New Password</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-ok"></span>
+									<input type="password" class="form-control" name="confirmPW" id="confirmPW" placeholder="Enter the new password which entered above" value="">
+								</div>
+							</div>
+						</div>
+						<div class="clearfix">&nbsp;</div>
+						<div class="form-group">
+							<div class="col-sm-12 text-center">
+								<button type="submit" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-ok"></span>&nbsp;Update</button>
+								<button type="reset" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-repeat"></span>&nbsp;Reset</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="reports">
+					<div class="col-sm-12">
+						<h2>Coming Soon</h2>
 					</div>
 				</div>
 			</div>
-			<!--<div class="row visible-lg-block">
-				<div class="col-md-12 col-lg-12">
-					<div class="panel panel-success">
-						<div class="panel-heading">You recently visited</div>
-						<div class="panel-body">
-							<div class="alert alert-info">You last visited us on Thursday, 20th March 2015. Please <a href="/contact.php" class="alert-link">let us know</a> in case of any issues or feedback.</div>
-							<ul class="list-inline">
-								<li><img src="img/p1.png" class="img-thumbnail" alt="Product 1" title="Product 1"></li>
-								<li><img src="img/p2.png" class="img-thumbnail" alt="Product 2" title="Product 2"></li>
-								<li><img src="img/p3.png" class="img-thumbnail" alt="Product 3" title="Product 3"></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>-->
+			</div>
 		</div>
 	
 		<div id="footer">
@@ -183,70 +202,7 @@
 				modal.find('.modal-title').text(data);
 			  
 			});
-			function addToCart() {
-				var txt = '<div id="alertdiv" class="alert alert-warning alert-dismissable"><button class="close" data-dismiss="alert">&times;</button><h4>Apologies</h4>This product could not be added into your cart. Please try again later.</div>';
-				$('#msg').php(txt);
-				$('#prod3').popover('hide');
-			};
-			var categories = [
-				{
-					text: "Personal",
-					title: "Please choose the speific subcategory to modify the options.",
-					icon: "glyphicon glyphicon-user",
-					state: {
-						expanded: true,
-						selected: true
-					},
-					nodes: [
-					{
-						text: "Basic information",
-						title: "Basic information",
-					},
-					{
-						text: "Change password",
-						title: "Change your password here"
-					}
-				]
-				},
-				{
-					text: "Reports",
-					title: "Please choose the speific subcategory to read the report.",
-					icon: "glyphicon glyphicon-tasks",
-					state: {
-						expanded: false,
-						selected: false
-					},
-					nodes: [
-					{
-						text: "Book leaning records",
-						title: "Book leaning history",
-					},
-					{
-						text: "Overdue penalty records",
-						title: "Overdue penalty records"
-					}
-				]
-				}
-			];
 
-			$('#categoryList').treeview({
-				data: categories,
-				onNodeSelected: function(event, data) {
-					$('#productHead').text(data.text);
-					$('#title').text(data.title);
-					$('#form').text(data.form);
-				}
-			});
-			$(document).ready(function(){
-				$('#categoryList').text({
-					data: categories,
-					onNodeSelected: function(event, data) {
-						$('#productHead').text(data.text);
-						$('#title').text(data.title);
-						$('#form').text(data.form);
-					}
-				});
-			});
 		</script>
 	</body>
 <html>

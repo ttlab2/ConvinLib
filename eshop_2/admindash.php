@@ -88,87 +88,303 @@
 				</div>
 			</nav>
 
-			<div class="page-header"><h1><span class="glyphicon glyphicon-question-sign"></span>&nbsp;About us</h1></div>
+			<div class="page-header"><h1><span class="glyphicon glyphicon-wrench"></span>&nbsp;Administrator Dashboard</h1></div>
 			<div id="msg"></div>
 			
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<div id="categoryList"></div>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-					<div class="panel panel-danger">
-						<div class="panel-heading" id="productHead">Fashion shop for Him</div>
-						<div class="panel-body">
-							<div class="row">
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p1.png" class="img-responsive img-thumbnail" title="Product 1" data-toggle="popover" data-placement="right" data-content="Details of Product 1"></dt>
-										<dd>Product 1</dd>
-									</dl>
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p3.png" class="img-responsive img-thumbnail" title="Product 3" id="prod3"></dt>
-										<dd>Product 3</dd>
-									</dl>
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p2.png" class="img-responsive img-thumbnail" alt="Product 2" title="Product 2"></dt>
-										<dd>Product 2</dd>
-									</dl>
+			<div class="well well-sm">
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#createNewBooks" aria-controls="createNewBooks" role="tab" data-toggle="tab">New Books</a></li>
+				<li role="presentation"><a href="#createNewUsers" aria-controls="createNewUsers" role="tab" data-toggle="tab">New Users</a></li>
+				<li role="presentation"><a href="#deleteUsers" aria-controls="deleteUsers" role="tab" data-toggle="tab">Remove Users</a></li>
+				<li role="presentation"><a href="#deleteBooks" aria-controls="deleteBooks" role="tab" data-toggle="tab">Cancel Books Registeration</a></li>
+				<li role="presentation"><a href="#reports" aria-controls="reports" role="tab" data-toggle="tab">Reports</a></li>
+			</ul>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="createNewBooks">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="cover" class="col-sm-3 control-label">Book Cover</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-book"></span>
+									<input type="file" class="form-control" name="cover" id="cover" accept="image/*" value="">
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p2.png" class="img-responsive img-thumbnail" alt="Product 2" title="Product 2"></dt>
-										<dd>Product 2</dd>
-									</dl>
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p1.png" class="img-responsive img-thumbnail" alt="Product 1" title="Product 1"></dt>
-										<dd>Product 1</dd>
-									</dl>
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p3.png" class="img-responsive img-thumbnail" alt="Product 3" title="Product 3"></dt>
-										<dd>Product 3</dd>
-									</dl>
-								</div>
-							</div>
-							<div class="dropdown">
-								<a class="btn btn-info btn-sm" href="#" data-toggle="dropdown" title="Open items in this shop...">See all&nbsp;<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">See next 20 items</a></li>
-									<li><a href="#">See next 100 items</a></li>
-									<li class="divider"></li>
-									<li><a href="#">Open all items</a></li>
-								</ul>				
-							</div>  
 						</div>
+						<div class="form-group">
+							<label for="bookID" class="col-sm-3 control-label">Book ID</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-qrcode"></span>
+									<input type="number" class="form-control" name="bookID" id="bookID" placeholder="Enter the Book ID (numbers only)" value="">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="title" class="col-sm-3 control-label">Title</label>
+								<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-book"></span>
+									<input type="text" class="form-control" name="title" id="title" placeholder="Enter the keywords on the title" value="">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="isbn" class="col-sm-3 control-label">ISBN</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-book"></span>
+									<input type="text" class="form-control" name="isbn" id="isbn" placeholder="Enter the ISBN (either ISBN-10 or ISBN-13)" value="">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="author" class="col-sm-3 control-label">Author</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-user"></span>
+									<input type="text" class="form-control" name="author" id="author" placeholder="Who write this book" value="">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="publisher" class="col-sm-3 control-label">Publisher</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-briefcase"></span>
+									<input type="text" class="form-control" name="publish" id="publisher" placeholder="Which company publish this book" value="">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="year" class="col-sm-3 control-label">Year of Publishing</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-calendar"></span>
+									<input type="text" class="form-control" name="year" id="year" placeholder="Which year publish this book" value="">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="lendingtype" class="col-sm-3 control-label">Material type</label>
+							<div class="col-sm-9">
+								<div class="radio">
+									<label class="radio-inline"><input type="radio" name="optlendingtype" value="LEN">Lending</label>
+									<label class="radio-inline"><input type="radio" name="optlendingtype" value="REF">Reference</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="classification" class="col-sm-3 control-label">Material classifications (more than one classifications can be selected):</label>
+							<div class="col-sm-9">
+								<select multiple class="form-control" size="20" name="selectclass" id="optclassification">
+									<!--All followed with LoC Scheme (simplified)-->
+									<!--Class A Group-->
+									<option value="A">Class A - General Works</option>
+									<option value="AE">Class AE - Encyclopedias</option>
+									<option value="AY">Class AY - Yearbooks, Almanacs</option>
+									<!--Class B Group-->
+									<option value="B">Class B - Philosophy</option>
+									<option value="BF">Class BF - Phychology</option>
+									<option value="BJ">Class BJ - Ethics, Conduct of life</option>
+									<!--Class C Group-->
+									<option value="C">Class C - Auxiliary Sciences of History</option>
+									<option value="CT">Class CT - Biography</option>
+									<!--Class D to F Group-->
+									<option value="D">Class D to F - History</option>
+									<!--Class G Group-->
+									<option value="G">Class G - Geography</option>
+									<option value="G">Class G - Tourism</option>
+									<option value="GV">Class GV - Recreation, Sports, Games</option>
+									<!--Class H Group-->
+									<option value="H">Class H - Social Sciences</option>
+									<option value="HA">Class HA - Statistics</option>
+									<option value="HB">Class HB - Economic Theory</option>
+									<option value="HD">Class HD - Management, Supply Chain Management</option>
+									<option value="HE">Class HE - Transportation and Communication</option>
+									<option value="HF">Class HF - Accounting, Commerce, Marketing, Customer Services</option>
+									<option value="HG">Class HG - Finance, Banking, Insurance</option>
+									<option value="HJ">Class HJ - Public Finance, Taxation</option>
+									<!--Class J Group-->
+									<option value="J">Class J - Politics and Government</option>
+									<!--Class K Group-->
+									<option value="K">Class K - Law</option>
+									<option value="KNQ">Class KNQ - China Law</option>
+									<!--Class L Group-->
+									<option value="L">Class L - Education</option>
+									<!--Class M Group-->
+									<option value="M">Class M - Music</option>
+									<!--Class N Group-->
+									<option value="N">Class N - Visual Arts</option>
+									<option value="NC">Class NC - Drawing, Design, Illustration</option>
+									<option value="NK">Class NK - Decorative Arts, Applied Arts</option>
+									<!--Class P Group-->
+									<option value="P">Class P - Language and Literature</option>
+									<option value="PE">Class PE - English Language</option>
+									<option value="PL">Class PL - Chinese Language & Literature</option>
+									<option value="PN">Class PN - Motion Pictures, TV Programs, Movies</option>
+									<!--Class Q Group-->
+									<option value="Q">Class Q - Science</option>
+									<option value="QA">Class QA - Mathematics, Computer Science</option>
+									<option value="QC">Class QC - Physics</option>
+									<option value="QD">Class QD - Chemistry</option>
+									<option value="QE">Class QE - Geology</option>
+									<option value="QH">Class QH - Biology, Ecology</option>
+									<option value="QR">Class QR - Microbiology</option>
+									<!--Class R Group-->
+									<option value="R">Class R - Medicine</option>
+									<option value="RA">Class RA - Beauty, Fitness, Health</option>
+									<option value="RS">Class RS - Pharmary, Chinese Medicine</option>
+									<!--Class S Group-->
+									<option value="S">Class S - Agricluture</option>
+									<option value="SB">Class SB - Plant Culture, Gardening</option>
+									<option value="SF">Class SF - Animal Culture</option>
+									<!--Class T Group-->
+									<option value="T">Class T - General Technology</option>
+									<option value="TA">Class TA - Engineering, Civil Engineering</option>
+									<option value="TC">Class TC - Hydraulic Engineering</option>
+									<option value="TD">Class TD - Environmental Technology, Sanitary Engineering</option>
+									<option value="TJ">Class TJ - Mechanicial Engineering & Machinery</option>
+									<option value="TK">Class TK - Electrical Engineering, Electronics, Nuclear Engineering</option>
+									<option value="TP">Class TP - Chemical Technology</option>
+									<option value="TR">Class TR - 3-D Modeling, Photography</option>
+									<option value="TS">Class TS - Manufactures</option>
+									<option value="TX">Class TX - Hotel & Catering</option>
+									<!--Class U Group-->
+									<option value="U">Class U - Military Science</option>
+									<!--Class V Group-->
+									<option value="V">Class V - Naval Science</option>
+									<!--Class Z Group-->
+									<option value="Z">Class Z - Bibliography and Library Science</option>
+								
+								</select>
+							</div>
+						</div>
+					
+						<div class="clearfix">&nbsp;</div>
+						<div class="form-group">
+							<div class="col-sm-12 text-center">
+								<button type="submit" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-ok"></span>&nbsp;Create</button>
+								<button type="reset" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-repeat"></span>&nbsp;Reset</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			
+				<div role="tabpanel" class="tab-pane" id="createNewUsers">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="userIcon" class="col-sm-3 control-label">User Icon</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-user"></span>
+									<input type="file" class="form-control" name="userIcon" id="userIcon" accept="image/*" value="">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="user_ID" class="col-sm-3 control-label">User ID</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-qrcode"></span>
+									<input type="text" class="form-control" name="user_ID" id="user_ID" placeholder="Enter the User ID" value="">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="uName" class="col-sm-3 control-label">User Shown Name</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-user"></span>
+									<input type="text" class="form-control" name="uName" id="uName" placeholder="Enter the User Name" value="">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="passwd" class="col-sm-3 control-label">Password</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-asterisk"></span>
+									<input type="password" class="form-control" name="passwd" id="passwd" placeholder="Enter the password" value="">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="confirmPW" class="col-sm-3 control-label">Confirm Password</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-ok"></span>
+									<input type="password" class="form-control" name="confirmPW" id="confirmPW" placeholder="Enter the password which entered above" value="">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="userRight" class="col-sm-3 control-label">User Right</label>
+							<div class="col-sm-9">
+								<div class="radio">
+									<label class="radio-inline"><input type="radio" name="optlendingtype" value="ADM" disabled>Administrator</label>
+									<label class="radio-inline"><input type="radio" name="optlendingtype" value="LIB">Librarian</label>
+									<label class="radio-inline"><input type="radio" name="optlendingtype" value="USE">Standard User</label>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix">&nbsp;</div>
+						<div class="form-group">
+							<div class="col-sm-12 text-center">
+								<button type="submit" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-ok"></span>&nbsp;Create</button>
+								<button type="reset" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-repeat"></span>&nbsp;Reset</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="deleteUsers">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="user_ID" class="col-sm-3 control-label">User ID</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-qrcode"></span>
+									<input type="text" class="form-control" name="user_ID" id="user_ID" placeholder="Enter the User ID" value="">
+								</div>
+							</div>
+						</div>
+						<div class="clearfix">&nbsp;</div>
+						<div class="form-group">
+							<div class="col-sm-12 text-center">
+								<button type="submit" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-search"></span>&nbsp;Search</button>
+								<button type="reset" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-repeat"></span>&nbsp;Reset</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="deleteBooks">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="bookID" class="col-sm-3 control-label">Book ID</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-qrcode"></span>
+									<input type="number" class="form-control" name="bookID" id="bookID" placeholder="Enter the Book ID (numbers only)" value="">
+								</div>
+							</div>
+						</div>
+						<div class="clearfix">&nbsp;</div>
+						<div class="form-group">
+							<div class="col-sm-12 text-center">
+								<button type="submit" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-search"></span>&nbsp;Search</button>
+								<button type="reset" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-repeat"></span>&nbsp;Reset</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="reports">
+					<div class="col-sm-12">
+						<h2>Coming Soon</h2>
 					</div>
 				</div>
 			</div>
-			<div class="row visible-lg-block">
-				<div class="col-md-12 col-lg-12">
-					<div class="panel panel-success">
-						<div class="panel-heading">You recently visited</div>
-						<div class="panel-body">
-							<div class="alert alert-info">You last visited us on Thursday, 20th March 2015. Please <a href="/contact.php" class="alert-link">let us know</a> in case of any issues or feedback.</div>
-							<ul class="list-inline">
-								<li><img src="img/p1.png" class="img-thumbnail" alt="Product 1" title="Product 1"></li>
-								<li><img src="img/p2.png" class="img-thumbnail" alt="Product 2" title="Product 2"></li>
-								<li><img src="img/p3.png" class="img-thumbnail" alt="Product 3" title="Product 3"></li>
-							</ul>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
-	
 		<div id="footer">
 			<div class="container">
 				<div class="row">
@@ -219,110 +435,6 @@
 				var modal = $('#logonBox');
 				modal.find('.modal-title').text(data);
 			  
-			});
-			function addToCart() {
-				var txt = '<div id="alertdiv" class="alert alert-warning alert-dismissable"><button class="close" data-dismiss="alert">&times;</button><h4>Apologies</h4>This product could not be added into your cart. Please try again later.</div>';
-				$('#msg').php(txt);
-				$('#prod3').popover('hide');
-			};
-			var categories = [
-				{
-					text: "Fashion and Clothing for Him",
-					icon: "glyphicon glyphicon-user",
-					state: {
-						expanded: true,
-						selected: true
-					},
-					nodes: [
-					{
-						text: "Shirts",
-					},
-					{
-						text: "Tees"
-					},
-					{
-						text: "Trousers"
-					},
-					{
-						text: "Footwear"
-					},
-					{
-						text: "Accessories"
-					}
-				]
-				},
-				{
-					text: "Fashion and Clothing for Her",
-					icon: "glyphicon glyphicon-heart",
-					state: {
-						expanded: false,
-						selected: false
-					},
-					nodes: [
-					{
-						text: "Shirts",
-					},
-					{
-						text: "Tees"
-					},
-					{
-						text: "Skirts"
-					},
-					{
-						text: "Footwear"
-					},
-					{
-						text: "Jewellery"
-					},
-					{
-						text: "Accessories"
-					}
-				]
-				},
-				{
-					text: "Electronics",
-					icon: "glyphicon glyphicon-phone",
-					state: {
-						expanded: false,
-						selected: false
-					},
-					nodes: [
-					{
-						text: "Mobiles",
-					},
-					{
-						text: "Tablets"
-					},
-					{
-						text: "LEDs and LCDs"
-					},
-					{
-						text: "Laptops"
-					},
-					{
-						text: "Desktops"
-					},
-					{
-						text: "Cameras"
-					},
-					{
-						text: "Appliances"
-					},
-					{
-						text: "Health Care"
-					},
-					{
-						text: "Accessories"
-					}
-				]
-				}
-			];
-
-			$('#categoryList').treeview({
-				data: categories,
-				onNodeSelected: function(event, data) {
-					$('#productHead').text(data.text);
-				}
 			});
 
 		</script>

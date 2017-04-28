@@ -145,14 +145,14 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="year" class="col-sm-3 control-label">Year of publishing</label>
-						<div class="col-sm-9">
-							<div class="input-group">
-								<span class="input-group-addon glyphicon glyphicon-calendar"></span>
-								<input type="text" class="form-control" name="year" id="year" placeholder="Who write this book" value="">
+							<label for="year" class="col-sm-3 control-label">Year of Publishing</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon glyphicon glyphicon-calendar"></span>
+									<input type="text" class="form-control" name="year" id="year" placeholder="Which year publish this book" value="">
+								</div>
 							</div>
 						</div>
-					</div>
 					<div class="form-group">
 						<label for="lendingtype" class="col-sm-3 control-label">Material type</label>
 						<div class="col-sm-9">
