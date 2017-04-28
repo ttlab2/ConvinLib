@@ -105,14 +105,10 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									<form class="form-horizontal" id="form">
 									
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									
+									</form>
 								</div>
 							</div>
 						</div>
@@ -195,6 +191,7 @@
 			var categories = [
 				{
 					text: "Personal",
+					title: "Please choose the speific subcategory to modify the options.",
 					icon: "glyphicon glyphicon-user",
 					state: {
 						expanded: true,
@@ -202,15 +199,18 @@
 					},
 					nodes: [
 					{
-						text: "User appearence",
+						text: "Basic information",
+						title: "Basic information",
 					},
 					{
-						text: "Change password"
+						text: "Change password",
+						title: "Change your password here"
 					}
 				]
 				},
 				{
 					text: "Reports",
+					title: "Please choose the speific subcategory to read the report.",
 					icon: "glyphicon glyphicon-tasks",
 					state: {
 						expanded: false,
@@ -219,9 +219,11 @@
 					nodes: [
 					{
 						text: "Book leaning records",
+						title: "Book leaning history",
 					},
 					{
-						text: "Late return penalty records"
+						text: "Overdue penalty records",
+						title: "Overdue penalty records"
 					}
 				]
 				}
@@ -231,9 +233,20 @@
 				data: categories,
 				onNodeSelected: function(event, data) {
 					$('#productHead').text(data.text);
+					$('#title').text(data.title);
+					$('#form').text(data.form);
 				}
 			});
-
+			$(document).ready(function(){
+				$('#categoryList').text({
+					data: categories,
+					onNodeSelected: function(event, data) {
+						$('#productHead').text(data.text);
+						$('#title').text(data.title);
+						$('#form').text(data.form);
+					}
+				});
+			});
 		</script>
 	</body>
 <html>
