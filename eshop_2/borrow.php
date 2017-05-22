@@ -3,11 +3,32 @@
 	<head>
 		<title>(School Name) Library Service</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--BootStrap CSS-->
 		<link href="bs/css/bootstrap.min.css" rel="stylesheet">
 		<link href="bs/css/bootstrap-theme.min.css" rel="stylesheet">
 		
+		<!--BootStrap JS-->
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script type="text/javascript" src="bs/js/bootstrap.min.js"></script>
+		
+		<!--JS QR Code reader-->
+		<script type="text/javascript" src="js/jsqrcode/grid.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/version.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/detector.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/formatinf.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/errorlevel.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/bitmat.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/bmparser.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/datamask.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/rsdecoder.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/gf256poly.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/gf256.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/decoder.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/qrcode.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/findpat.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/alignpat.js"></script>
+		<script type="text/javascript" src="js/jsqrcode/databr.js"></script>
 		
 		<style>
 			.icon-bar {
@@ -70,7 +91,7 @@
 					<div class="collapse navbar-collapse" id="the-menu">
 						<ul class="nav navbar-nav">
 						<!--Icons provided by Glyphicons (included in Bootstrap).-->
-							<li class="active"><a href="/eshop_2/index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+							<li><a href="/eshop_2/index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
 							<li><a href="/eshop_2/about.php"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;About</a></li>
 							<li class="dropdown">
 								<a data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-book"></span>&nbsp;Books<span class="caret"></a>
@@ -95,62 +116,59 @@
 				</div>
 			</nav>
 
-			<div class="page-header"><h1><span class="glyphicon glyphicon-home"></span>&nbsp;Welcome to the (School Name) Library Service</h1></div>
+			<div class="page-header"><h1><span class="glyphicon glyphicon-log-out"></span>&nbsp;Borrow books and medias</h1></div>
 			
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<div class="panel panel-info">
-						<div class="panel-heading">Latest Books Intake</div>
-						<div class="panel-body">
+						<div class="panel-heading">Reader's information</div>
+						<div class="panel-body"> 
 							<div class="row">
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/Book_Cover/Morse_book_cover.jpg" class="img-responsive img-thumbnail" alt="Morse" title="Morse"></dt>
-										<dd>Morse</dd>
-									</dl>
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									<form class="form-inline">
+										<div class="form-group">
+											<label for="User_id">Reader's ID: </label>
+											<input type="email" class="form-control" name="uid" id="uid" value"" placeholder="Enter Reader's ID">
+											<input type="submit" class="btn btn-primary"></button>
+										</div>
+									</form>
 								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+							</div>
+							<div class="row">
+								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 									<dl>
-										<dt><img src="img/Book_Cover/Golden_Watlle_Cookery_Book_cover,_6th_ed.jpg" class="img-responsive img-thumbnail" alt="Golden Watlle Cookery Book" title="Golden Watlle Cookery Book"></dt>
-										<dd>Golden Watlle Cookery Book</dd>
-									</dl>
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/Book_Cover/128px-Jackie_Robinson_No5_comic_book_cover.jpg" class="img-responsive img-thumbnail" alt="Jackie Robinson" title="Jackie Robinson"></dt>
-										<dd>Jackie Robinson</dd>
+										<dt><img src="img/default-user.png" class="img-responsive img-thumbnail" alt="Morse" title=""></dt>
+										<!--<dd></dd>-->
 									</dl>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/Book_Cover/Planet_of_the_Apes_book_cover.jpg" class="img-responsive img-thumbnail" alt="Planet of the Apes" title="Planet of the Apes"></dt>
-										<dd>Planet of the Apes</dd>
-									</dl>
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/Book_Cover/Springhaven_by_R_D_Blackmore_-_1887_book_cover.jpg" class="img-responsive img-thumbnail" alt="Springhaven" title="Springhaven"></dt>
-										<dd>Springhaven</dd>
-									</dl>
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/Book_Cover/The_Common_Sense_of_Socialism_-_book_cover.jpg" class="img-responsive img-thumbnail" alt="The Common Sense of Socialism" title="The Common Sense of Socialism"></dt>
-										<dd>The Common Sense of Socialism</dd>
-									</dl>
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									<ul>
+										<li>Name: </li>
+										<li>ID: </li>
+										<li>Books currently borrowed: </li>
+									<ul>
 								</div>
 							</div>
-							<a class="btn btn-info btn-sm" href="#" role="button">See all recent items...</a>
+							<a class="btn btn-info btn-sm" href="#" role="button">See full profile</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 					<div class="panel panel-warning">
-						<div class="panel-heading">Event Notice</div>
+						<div class="panel-heading">Books or medias currently processing</div>
 						<div class="panel-body">
-							<div id="bestSellers" class="carousel slide" data-ride="carousel">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									<form class="form-inline">
+										<div class="form-group">
+											<label for="Book_id">Books or medias' ID: </label>
+											<input type="email" class="form-control" name="bookid" id="bookid" value"" placeholder="Enter books or medias' ID">
+											<input type="submit" class="btn btn-primary"></button>
+										</div>
+									</form>
+								</div>
+							<!--<div id="bestSellers" class="carousel slide" data-ride="carousel">
 								<ol class="carousel-indicators">
 									<li data-target="#bestSellers" data-slide-to="0" class="active"></li>
 									<li data-target="#bestSellers" data-slide-to="1"></li>
@@ -183,7 +201,7 @@
 								<a class="right carousel-control" href="#bestSellers" data-slide="next">
 									<span class="glyphicon glyphicon-chevron-right"></span>
 								</a>
-							</div>	
+							</div>-->
 						</div>
 					</div>
 				</div>
@@ -191,7 +209,7 @@
 			<div class="row visible-lg-block">
 				<div class="col-md-12 col-lg-12">
 					<div class="panel panel-danger">
-						<div class="panel-heading">Books need to return</div>
+						<div class="panel-heading">Books or medias borrowed since last record</div>
 						<div class="panel-body">
 							<!--<div class="alert alert-info">
 								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -199,19 +217,19 @@
 								</button>
 								<strong>Attendtion Please:</strong><br />Please <!--<a href="/contact.php" class="alert-link">let us know</a>--><!--return or renew the books you borrowed on time to avoid the unnecessary penalty payment.
 							</div>-->
-							<!--<div class="alert alert-danger">
+							<div class="alert alert-danger">
 								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 								</button>
-								<strong>Warning:</strong><br />You <!--<a href="/contact.php" class="alert-link">let us know</a>--><!--now have at least one book already expired. Please return to the library immediately.
-							</div>-->
-							<!--Friendly Reminder supposed to be more random. As not only one reminder in the system.-->
-							<div class="alert alert-success">
-								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-								<strong>Friendly Reminder:</strong><br />You <!--<a href="/contact.php" class="alert-link">let us know</a>-->can now pre-order books when you got interested.
+								<strong>Warning:</strong><br />You <!--<a href="/contact.php" class="alert-link">let us know</a>-->now have at least one book already expired. Please return to the library immediately.
 							</div>
+							<!--Friendly Reminder supposed to be more random. As not only one reminder in the system.-->
+							<!--<div class="alert alert-success">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<strong>Friendly Reminder:</strong><br />You <!--<a href="/contact.php" class="alert-link">let us know</a>--><!--can now pre-order books when you got interested.
+							</div>-->
 							<!--<ul class="list-inline">
 								<li><img src="img/p1.png" class="img-thumbnail" alt="Product 1" title="Product 1"></li>
 								<li><img src="img/p2.png" class="img-thumbnail" alt="Product 2" title="Product 2"></li>
@@ -235,7 +253,7 @@
 							Hong Kong<br>
 							<abbr title="Phone">P:</abbr> 2666 8601<br>
 							<a href="mailto:#">library@strongschool.edu.hk</a>
-													</address>					
+						</address>					
 					</div>
 				</div>
 

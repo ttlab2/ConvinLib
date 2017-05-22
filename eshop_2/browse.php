@@ -25,38 +25,17 @@
 						<div>
 							<ul class="nav nav-pills">
 								<li class="active"><a href="#signin" data-toggle="tab" data-caption="Sign In">Sign In</a></li>
-								<li ><a href="#signup" data-toggle="tab" data-caption="Sign Up">Sign Up</a></li>
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane active" id="signin">
-									<form style="padding-top: 5px">
+									<form style="padding-top: 5px" action="welcomeback.php" method="post">
 										<div class="form-group">
-											<input type="text" class="form-control" id="userName" placeholder="User Name">
+											<input type="text" class="form-control" id="userName" name="userName" placeholder="User Name">
 										</div>
 										<div class="form-group">
-											<input type="password" class="form-control" id="password" placeholder="Password">
+											<input type="password" class="form-control" id="password" name="password" placeholder="Password">
 										</div>
 										<button type="button" class="btn btn-success btn-block" id="doLogon">Sign In</button>
-									</form>
-								</div>
-								<div class="tab-pane" id="signup">
-									<form style="padding-top: 5px">
-										<div class="form-group">
-											<input type="text" class="form-control" id="yourName" placeholder="Your Full Name">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" id="yourUserName" placeholder="Desired User Name">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" id="yourEmail" placeholder="Your Email Id">
-										</div>
-										<div class="form-group">
-											<input type="password" class="form-control" id="yourPwd" placeholder="Password">
-										</div>
-										<div class="form-group">
-											<input type="password" class="form-control" id="confirmPwd" placeholder="Confirm Password">
-										</div>
-										<button type="button" class="btn btn-success btn-block" id="doLogon">Sign Up</button>
 									</form>
 								</div>
 							</div>
@@ -77,26 +56,28 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand brand" href="/index.php">(School Name) Library Service</a>
+						<a class="navbar-brand brand" href="/eshop_2/index.php">(School Name) Library Service</a>
 					</div>
 
 					<div class="collapse navbar-collapse" id="the-menu">
 						<ul class="nav navbar-nav">
 						<!--Icons provided by Glyphicons (included in Bootstrap).-->
-							<li><a href="/index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
-							<li><a href="/about.php"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;About</a></li>
-							<li class="active"><a href="/browse.php"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Books List</a></li>
-							<li><a href="/search.php"><span class="glyphicon glyphicon-search"></span>&nbsp;Book Search</a></li>
-							<li><a href="/contact.php"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
+							<li><a href="/eshop_2/index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+							<li><a href="/eshop_2/about.php"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;About</a></li>
+							<li class="dropdown">
+								<a data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-book"></span>&nbsp;Books<span class="caret"></a>
+								<ul class="dropdown-menu">
+									<li class="active"><a href="/eshop_2/browse.php"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Books List</a></li>
+									<li><a href="/eshop_2/search.php"><span class="glyphicon glyphicon-search"></span>&nbsp;Book Search</a></li>
+								</ul>	
+							</li>
+							<li><a href="/eshop_2/contact.php"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="dropdown">
 								<a data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;Welcome Back<span class="caret"></span></a> 
 								<ul class="dropdown-menu">
-									<!--<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;My Cart&nbsp;<span class="badge">4</span></a></li>
-									<li class="divider"></li>-->
-									<li><a href="#"><span class="glyphicon glyphicon-picture"></span>&nbsp;My Profile</a></li>
-									<li><a href="#"><span class="glyphicon glyphicon-gift"></span>&nbsp;Lending History</a></li>
+									<li><a href="/eshop_2/preference.php"><span class="glyphicon glyphicon-picture"></span>&nbsp;Preference & Lending History</a></li>
 									<li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Notifications</a></li>
 								</ul>				
 							</li>
@@ -120,19 +101,19 @@
 							<div class="row">
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 									<dl>
-										<dt><img src="img/Book_Cover/Morse_book_cover.jpg" class="img-responsive img-thumbnail" alt="Morse" title="Morse"></dt>
+										<dt><img src="img/Book_Cover/Morse_book_cover.jpg" class="img-responsive img-thumbnail" width="80" alt="Morse" title="Morse"></dt>
 										<dd>Morse</dd>
 									</dl>
 								</div>
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 									<dl>
-										<dt><img src="img/Book_Cover/Golden_Watlle_Cookery_Book_cover,_6th_ed.jpg" class="img-responsive img-thumbnail" alt="Golden Watlle Cookery Book" title="Golden Watlle Cookery Book"></dt>
+										<dt><img src="img/Book_Cover/Golden_Watlle_Cookery_Book_cover,_6th_ed.jpg" class="img-responsive img-thumbnail" width="80" alt="Golden Watlle Cookery Book" title="Golden Watlle Cookery Book"></dt>
 										<dd>Golden Watlle Cookery Book</dd>
 									</dl>
 								</div>
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 									<dl>
-										<dt><img src="img/Book_Cover/128px-Jackie_Robinson_No5_comic_book_cover.jpg" class="img-responsive img-thumbnail" alt="Jackie Robinson" title="Jackie Robinson"></dt>
+										<dt><img src="img/Book_Cover/128px-Jackie_Robinson_No5_comic_book_cover.jpg" class="img-responsive img-thumbnail" width="80" alt="Jackie Robinson" title="Jackie Robinson"></dt>
 										<dd>Jackie Robinson</dd>
 									</dl>
 								</div>
@@ -140,19 +121,19 @@
 							<div class="row">
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 									<dl>
-										<dt><img src="img/Book_Cover/Planet_of_the_Apes_book_cover.jpg" class="img-responsive img-thumbnail" alt="Planet of the Apes" title="Planet of the Apes"></dt>
+										<dt><img src="img/Book_Cover/Planet_of_the_Apes_book_cover.jpg" class="img-responsive img-thumbnail" width="80" alt="Planet of the Apes" title="Planet of the Apes"></dt>
 										<dd>Planet of the Apes</dd>
 									</dl>
 								</div>
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 									<dl>
-										<dt><img src="img/Book_Cover/Springhaven_by_R_D_Blackmore_-_1887_book_cover.jpg" class="img-responsive img-thumbnail" alt="Springhaven" title="Springhaven"></dt>
+										<dt><img src="img/Book_Cover/Springhaven_by_R_D_Blackmore_-_1887_book_cover.jpg" class="img-responsive img-thumbnail" width="80" alt="Springhaven" title="Springhaven"></dt>
 										<dd>Springhaven</dd>
 									</dl>
 								</div>
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 									<dl>
-										<dt><img src="img/Book_Cover/The_Common_Sense_of_Socialism_-_book_cover.jpg" class="img-responsive img-thumbnail" alt="The Common Sense of Socialism" title="The Common Sense of Socialism"></dt>
+										<dt><img src="img/Book_Cover/The_Common_Sense_of_Socialism_-_book_cover.jpg" class="img-responsive img-thumbnail" width="80" alt="The Common Sense of Socialism" title="The Common Sense of Socialism"></dt>
 										<dd>The Common Sense of Socialism</dd>
 									</dl>
 								</div>

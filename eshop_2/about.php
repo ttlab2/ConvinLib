@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>(School Name) Library Service</title>
+		<title>About us & Help Page</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="bs/css/bootstrap.min.css" rel="stylesheet">
 		<link href="bs/css/bootstrap-theme.min.css" rel="stylesheet">
@@ -25,38 +25,17 @@
 						<div>
 							<ul class="nav nav-pills">
 								<li class="active"><a href="#signin" data-toggle="tab" data-caption="Sign In">Sign In</a></li>
-								<li ><a href="#signup" data-toggle="tab" data-caption="Sign Up">Sign Up</a></li>
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane active" id="signin">
-									<form style="padding-top: 5px">
+									<form style="padding-top: 5px" action="welcomeback.php" method="post">
 										<div class="form-group">
-											<input type="text" class="form-control" id="userName" placeholder="User Name">
+											<input type="text" class="form-control" id="userName" name="userName" placeholder="User Name">
 										</div>
 										<div class="form-group">
-											<input type="password" class="form-control" id="password" placeholder="Password">
+											<input type="password" class="form-control" id="password" name="password" placeholder="Password">
 										</div>
 										<button type="button" class="btn btn-success btn-block" id="doLogon">Sign In</button>
-									</form>
-								</div>
-								<div class="tab-pane" id="signup">
-									<form style="padding-top: 5px">
-										<div class="form-group">
-											<input type="text" class="form-control" id="yourName" placeholder="Your Full Name">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" id="yourUserName" placeholder="Desired User Name">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" id="yourEmail" placeholder="Your Email Id">
-										</div>
-										<div class="form-group">
-											<input type="password" class="form-control" id="yourPwd" placeholder="Password">
-										</div>
-										<div class="form-group">
-											<input type="password" class="form-control" id="confirmPwd" placeholder="Confirm Password">
-										</div>
-										<button type="button" class="btn btn-success btn-block" id="doLogon">Sign Up</button>
 									</form>
 								</div>
 							</div>
@@ -78,26 +57,28 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand brand" href="/index.php">(School Name) Library Service</a>
+						<a class="navbar-brand brand" href="/eshop_2/index.php">(School Name) Library Service</a>
 					</div>
 
 					<div class="collapse navbar-collapse" id="the-menu">
 						<ul class="nav navbar-nav">
 						<!--Icons provided by Glyphicons (included in Bootstrap).-->
-							<li><a href="/index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
-							<li class="active"><a href="/about.php"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;About</a></li>
-							<li><a href="/browse.php"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Books List</a></li>
-							<li><a href="/search.php"><span class="glyphicon glyphicon-search"></span>&nbsp;Book Search</a></li>
-							<li><a href="/contact.php"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
+							<li><a href="/eshop_2/index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+							<li class="active"><a href="/eshop_2/about.php"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;About</a></li>
+							<li class="dropdown">
+								<a data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-book"></span>&nbsp;Books<span class="caret"></a>
+								<ul class="dropdown-menu">
+									<li><a href="/eshop_2/browse.php"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Books List</a></li>
+									<li><a href="/eshop_2/search.php"><span class="glyphicon glyphicon-search"></span>&nbsp;Book Search</a></li>
+								</ul>	
+							</li>
+							<li><a href="/eshop_2/contact.php"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="dropdown">
 								<a data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;Welcome Back<span class="caret"></span></a> 
 								<ul class="dropdown-menu">
-									<!--<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;My Cart&nbsp;<span class="badge">4</span></a></li>
-									<li class="divider"></li>-->
-									<li><a href="#"><span class="glyphicon glyphicon-picture"></span>&nbsp;My Profile</a></li>
-									<li><a href="#"><span class="glyphicon glyphicon-gift"></span>&nbsp;Lending History</a></li>
+									<li><a href="/eshop_2/preference.php"><span class="glyphicon glyphicon-picture"></span>&nbsp;Preference & Lending History</a></li>
 									<li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Notifications</a></li>
 								</ul>				
 							</li>
@@ -116,62 +97,20 @@
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 					<div class="panel panel-danger">
-						<div class="panel-heading" id="productHead">Fashion shop for Him</div>
+						<div class="panel-heading" id="productHead">About us</div>
 						<div class="panel-body">
-							<div class="row">
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+							<div class="col">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 									<dl>
-										<dt><img src="img/p1.png" class="img-responsive img-thumbnail" title="Product 1" data-toggle="popover" data-placement="right" data-content="Details of Product 1"></dt>
-										<dd>Product 1</dd>
-									</dl>
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p3.png" class="img-responsive img-thumbnail" title="Product 3" id="prod3"></dt>
-										<dd>Product 3</dd>
-									</dl>
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p2.png" class="img-responsive img-thumbnail" alt="Product 2" title="Product 2"></dt>
-										<dd>Product 2</dd>
+										<h3 id="contentTitle">Please choose the subcategory for specific information</h3>
 									</dl>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p2.png" class="img-responsive img-thumbnail" alt="Product 2" title="Product 2"></dt>
-										<dd>Product 2</dd>
-									</dl>
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p1.png" class="img-responsive img-thumbnail" alt="Product 1" title="Product 1"></dt>
-										<dd>Product 1</dd>
-									</dl>
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-									<dl>
-										<dt><img src="img/p3.png" class="img-responsive img-thumbnail" alt="Product 3" title="Product 3"></dt>
-										<dd>Product 3</dd>
-									</dl>
-								</div>
-							</div>
-							<div class="dropdown">
-								<a class="btn btn-info btn-sm" href="#" data-toggle="dropdown" title="Open items in this shop...">See all&nbsp;<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">See next 20 items</a></li>
-									<li><a href="#">See next 100 items</a></li>
-									<li class="divider"></li>
-									<li><a href="#">Open all items</a></li>
-								</ul>				
-							</div>  
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row visible-lg-block">
+			<!--<div class="row visible-lg-block">
 				<div class="col-md-12 col-lg-12">
 					<div class="panel panel-success">
 						<div class="panel-heading">You recently visited</div>
@@ -185,7 +124,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 		</div>
 	
 		<div id="footer">
@@ -246,7 +185,8 @@
 			};
 			var categories = [
 				{
-					text: "Fashion and Clothing for Him",
+					text: "About us",
+					title: "Please choose the subcategory for specific information",
 					icon: "glyphicon glyphicon-user",
 					state: {
 						expanded: true,
@@ -254,84 +194,43 @@
 					},
 					nodes: [
 					{
-						text: "Shirts",
+						text: "Project",
+						title: "",
 					},
 					{
-						text: "Tees"
+						text: "Acknowledgement",
+						title: "Acknowledgement"
 					},
 					{
-						text: "Trousers"
-					},
-					{
-						text: "Footwear"
-					},
-					{
-						text: "Accessories"
+						text: "Special thanks",
+						title: "Special thanks"
 					}
 				]
 				},
 				{
-					text: "Fashion and Clothing for Her",
-					icon: "glyphicon glyphicon-heart",
+					text: "Help page",
+					title: "Please choose the subcategory for specific information",
+					icon: "glyphicon glyphicon-question-sign",
 					state: {
 						expanded: false,
 						selected: false
 					},
 					nodes: [
 					{
-						text: "Shirts",
+						text: "First login",
+						title: "First login",
 					},
 					{
-						text: "Tees"
+						text: "Usage",
+						title: "How to use this system"
 					},
 					{
-						text: "Skirts"
+						text: "Reminder",
+						title: "Reminder in this system"
 					},
 					{
-						text: "Footwear"
-					},
-					{
-						text: "Jewellery"
-					},
-					{
-						text: "Accessories"
-					}
-				]
-				},
-				{
-					text: "Electronics",
-					icon: "glyphicon glyphicon-phone",
-					state: {
-						expanded: false,
-						selected: false
-					},
-					nodes: [
-					{
-						text: "Mobiles",
-					},
-					{
-						text: "Tablets"
-					},
-					{
-						text: "LEDs and LCDs"
-					},
-					{
-						text: "Laptops"
-					},
-					{
-						text: "Desktops"
-					},
-					{
-						text: "Cameras"
-					},
-					{
-						text: "Appliances"
-					},
-					{
-						text: "Health Care"
-					},
-					{
-						text: "Accessories"
+						text: "Forgot password",
+						title: "Forgot password"
 					}
 				]
 				}
@@ -341,6 +240,7 @@
 				data: categories,
 				onNodeSelected: function(event, data) {
 					$('#productHead').text(data.text);
+					$('#contentTitle').text(data.title);
 				}
 			});
 

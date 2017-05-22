@@ -1,0 +1,79 @@
+--Records from the initial stage--
+31/10/2016 (Sam Wong)
+-Project started
+-Prototype pages modifications begin
+
+7/2/2017 (Sam Wong)
+-Library system startup (from the teammate's portable hard drive)
+-Archive original files to single folder
+-Upload the missing "welcomeback.php" during the conversion
+
+14/2/2017 (Sam Wong)
+-Format conversions from HTML to PHP completed
+-Archive original files to single folder
+-Upload the missing "welcomeback.php" during the conversion
+
+--Records logged during expansion--
+21/2/2017 (Sam Wong)
+-Borrow page added from index page (to be modified)
+-Changelog file added
+
+28/2/2017 (Sam Wong)
+-Borrow page modified
+-Renew page added (and modified from the finished borrow page)
+-Default user icon added for both borrow page and renew page
+
+7/3/2017 (Sam Wong)
+-Return page added (and modified from the finished borrow page, however the report generate function will be added)
+
+14/3/2017 (Sam Wong)
+-Advanced search page added (modifications not yet completed)
+
+21/3/2017 (Sam Wong)
+-Advanced search page modifications almost completed, to classify for lending or reference materials
+-Changelog records from GitHub added in this document
+
+28/3/2017 (Sam Wong)
+-Advanced search page completed
+--Simplified version of "Library of Congress Classification Scheme" implemented
+--Basic Form functions tested
+-Borrow, renew, return and signin pages modified for the bug fix
+
+11/4/2017 (Sam Wong)
+-jsqrcode JavaScript included, for further QRCode reader implementation
+--jsqrcode JavaScript included in the Borrow, renew and return pages, the JavaScript will be tested later on
+-Information text document added, for copyright information (to be included in the about us webpage)
+
+18/4/2017 (Sam Wong)
+-About us page re-layouted (to be adjusted by javascript)
+-User Preference, Administrator Dashboard pages added (from the About us page and to be modified)
+
+23/4/2017 (Sam Wong)
+-About us page cleanup
+-Browse Books page book covers size adjustment
+
+25/4/2017 (Sam Wong)
+-Refill the missing "18/4/2017" in changelog (affect in GitHub only) when replacing the modified files
+
+25/4/2017 (2) (Sam Wong)
+-Major alterations in current pages
+--Navigation bar re-ordered
+--Relevant links fixed
+-User preference page modification in progress
+
+25/4/2017 (3) (Sam Wong)
+-Minor bug fixes in current pages
+--Title link fix
+
+25/4/2017 (4) (Sam Wong)
+-Minor bug fixes in current pages
+--Remove the "Sign up" tag from template
+
+28/4/2017 (Sam Wong)
+-Year of publishing fleid added in the search page
+-About up heading change
+-Preference page update
+
+28/4/2017 (2) (Sam Wong)
+-404 Page update
+-Administrator Dashboard and User Preference complete, User interface is now almost supported with "Create, Read, Update and Delete".
